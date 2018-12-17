@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Result Page</title>
+		<style>
+			body{
+				background-color: blue;
+			}
+			#topbar{
+				background-color: green;
+				height: 100px;
+			}
+			#searchResults{
+				
+			}
+			#Libra{
+				-webkit-text-stroke: initial;
+				font-size:32px;
+				font-family: cursive;
+				float: left;
+			}
+			#hohei{
+				margin-left:20px; 
+				margin-top:20px;
+				width:500px;
+				height:20px;
+			}
+			#searchOption{
+				font: 15px arial, sans-serif;
+				position: relative;
+				left: 800px;
+			}
+			#c1{
+				width: 200px;
+				float: left;
+				position: relative;
+			}
+			#c2{
+				left: 200px;
+				position: relative;
+			}
+			#c3{
+				float: left;
+				width: 200px;
+				position: relative;
+			}
+			#c4{
+				left: 200px;
+				position: relative;
+			}
+			.box{
+				float: left;
+				width:300px;
+				height:400px;
+				border:10px solid black;
+				margin:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="Libra">LibraMate</div>
+			<form name="searchTable" method="GET"><input id="hohei" type="text" name="context" value="Please enter here: "></form>
+			<div id="searchOption">
+				<form name="table" method="GET" action="css0.html">
+				<div id="c1"><input type="radio" name="choice" value="Title">Title</input></div>
+	            <div id="c2"><input type="radio" name="choice" value="ISBN" >ISBN</input></div>
+	            <div id="c3"><input type="radio" name="choice" value="Author">Author</input></div>
+	            <div id="c4"><input type="radio" name="choice" value="Genre">Genre</input></div>
+	          	</form>
+			</div>
+		</div>
+		<div id="searchResults">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</body>
+</html>
